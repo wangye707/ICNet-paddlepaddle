@@ -303,7 +303,7 @@ def CCF124(sub1_out, sub24_out, input_shape):
     tmp = interp(tmp, input_shape // 4)
     return tmp
 
-
+#
 def icnet(data, num_classes, input_shape):
     image_sub1 = data
     image_sub2 = interp(data, out_shape=input_shape * 0.5)
