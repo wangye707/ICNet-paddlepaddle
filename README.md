@@ -5,11 +5,12 @@
 数据集下载：
 * 百度网盘下载数据集地址：https://pan.baidu.com/s/1DkyQvhvHXVf6EMzm6uLZWQ 
 * 密码：37nk
+* 说明：5张图片中前4张用来切分，然后训练网络模型，最后一张图片5.png用来做测试
 
 已训练完成模型下载（其中有1000步和40万步，1000用来参考，40万是最终训练模型）：
 * 百度网盘下载地址：https://github.com/ximimiao/deeplabv3-Tensorflow
 * 密码：dddd
-* 说明：此处大家也可以自行训练，不采用我的模型。如果下载，请放在模型文件夹下（chkpnt/400000）
+* 说明：此处大家也可以自行训练，不采用此处提供的模型。如果下载，请放在模型文件夹下（chkpnt/400000）
 
 训练环境关键包依赖
 * numpy == 1.18.1
@@ -39,9 +40,9 @@ python eval.py --model_path=chkpnt/400000
 
 4.通过已训练完成的网络模型预测图片
 直接预测：
-python infer1.py --model_path=chlpnt/400000 --images_path=input1.png
+python infer1.py --model_path=chlpnt/400000 --images_path=/dataset/origin/5.png
 膨胀预测优化（推荐使用）：
-python infer_exp.py --model_path=chlpnt/400000 --images_path=input1.png
+python infer_exp.py --model_path=chlpnt/400000 --images_path=/dataset/origin/5.png
 ```
 迭代过程展示（部分细节）：
 
