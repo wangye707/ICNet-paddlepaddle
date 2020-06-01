@@ -27,3 +27,5 @@ python eval.py --chkpnt/3000
 膨胀预测优化：python infer_exp.py --model_path=chlpnt/370000 --images_path=input.png
 
 迭代过程展示（部分细节）：
+
+<img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/1.jpg" width="600" height="600" />
