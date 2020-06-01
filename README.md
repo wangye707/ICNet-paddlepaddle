@@ -3,8 +3,8 @@
 使用ICNet模型对航拍图片(遥感图像)进行图像分割
 
 数据集下载：
-* 百度网盘下载数据集地址：https://github.com/ximimiao/deeplabv3-Tensorflow
-* 密码：https://github.com/ximimiao/deeplabv3-Tensorflow
+* 百度网盘下载数据集地址：https://pan.baidu.com/s/1DkyQvhvHXVf6EMzm6uLZWQ 
+* 密码：37nk
 
 已训练完成模型下载（其中有1000步和40万步，1000用来参考，40万是最终训练模型）：
 * 百度网盘下载地址：https://github.com/ximimiao/deeplabv3-Tensorflow
@@ -29,20 +29,19 @@ python train.py
 python train.py  --batch_size=64 --checkpoint_path=chkpnt --init_model=chkpnt/1000 --use_gpu=True
 说明：checkpoint_path：  模型将保存的路径，默认为10000步保存一次。
       init_model：      预训练模型的路径，本次没有给出预训练模型。
-      
       模型恢复训练方式：  指定最新的模型路径来恢复训练，记得修改当
                         前迭代步数以保证正常训练（如在1000步时终止
                         ，记得修改迭代步数从1000开始，而不是默认参数0）
      
 3.评估网络模型
-python eval.py --model_path=chkpnt/370000
+python eval.py --model_path=chkpnt/400000
 说明：model_path是指定的模型文件路径
 
 4.通过已训练完成的网络模型预测图片
 直接预测：
-python infer1.py --model_path=chlpnt/370000 --images_path=input.png
+python infer1.py --model_path=chlpnt/400000 --images_path=input1.png
 膨胀预测优化（推荐使用）：
-python infer_exp.py --model_path=chlpnt/370000 --images_path=input.png
+python infer_exp.py --model_path=chlpnt/400000 --images_path=input1.png
 ```
 迭代过程展示（部分细节）：
 
