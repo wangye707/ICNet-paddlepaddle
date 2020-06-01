@@ -6,11 +6,12 @@
 * 百度网盘下载数据集地址：https://github.com/ximimiao/deeplabv3-Tensorflow
 * 密码：https://github.com/ximimiao/deeplabv3-Tensorflow
 
-已训练完成模型下载：
+已训练完成模型下载（其中有1000步和40万步，1000用来参考，40万是最终训练模型）：
 * 百度网盘下载地址：https://github.com/ximimiao/deeplabv3-Tensorflow
 * 密码：dddd
+* 说明：此处大家也可以自行训练，不采用我的模型。如果下载，请放在模型文件夹下（chkpnt/400000）
 
-训练环境依赖
+训练环境关键包依赖
 * numpy == 1.18.1
 * opencv-python == 4.2.0.32
 * paddlepaddle-gpu == 1.7.1.post97
@@ -26,23 +27,26 @@ python preprocess.py
 python train.py 
 指定参数请执行：              
 python train.py  --batch_size=64 --checkpoint_path=chkpnt --init_model=chkpnt/1000 --use_gpu=True
-说明：checkpoint_path是模型将保存的路径，默认为10000步保存一次
-     init_model是预训练模型的路径，本次没有给出预训练模型，但是当模型训练过程中意外中断，
-               指定最新的模型路径来恢复训练，记得修改当前迭代步数以保证正常训练（如在1000步是终止，记得修改迭代步数从1000开始，而不是0）
+说明：checkpoint_path：  模型将保存的路径，默认为10000步保存一次。
+      init_model：      预训练模型的路径，本次没有给出预训练模型。
+      
+      模型恢复训练方式：  指定最新的模型路径来恢复训练，记得修改当
+                        前迭代步数以保证正常训练（如在1000步时终止
+                        ，记得修改迭代步数从1000开始，而不是默认参数0）
      
 3.评估网络模型
-python eval.py --model_path=chkpnt/3000
+python eval.py --model_path=chkpnt/370000
 说明：model_path是指定的模型文件路径
 
 4.通过已训练完成的网络模型预测图片
 直接预测：
 python infer1.py --model_path=chlpnt/370000 --images_path=input.png
-膨胀预测优化：
+膨胀预测优化（推荐使用）：
 python infer_exp.py --model_path=chlpnt/370000 --images_path=input.png
 ```
 迭代过程展示（部分细节）：
 
-<img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/1.jpg" width="300" height="300" />
+<img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/1.jpg" width="350" height="350" />
 
 膨胀预测优化：
 
@@ -56,4 +60,4 @@ python infer_exp.py --model_path=chlpnt/370000 --images_path=input.png
 
 <img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/4.jpg" width="500" height="300" />
 
-本次数据集提供以及部分参考代码提供方：https://github.com/ximimiao/deeplabv3-Tensorflow
+本次数据集提供以及部分数据处理参考代码：https://github.com/ximimiao/deeplabv3-Tensorflow
