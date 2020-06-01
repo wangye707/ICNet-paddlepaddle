@@ -30,7 +30,6 @@ TRAIN_DATA_SHAPE = (3, 256, 256)
 TEST_DATA_SHAPE = (3, 256, 256)
 IMG_MEAN = np.array((103.939, 116.779, 123.68), dtype=np.float32)
 
-
 def train_data_shape():
     return TRAIN_DATA_SHAPE
 
