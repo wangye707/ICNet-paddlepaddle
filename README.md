@@ -61,3 +61,5 @@ python infer_exp.py --model_path=chlpnt/370000 --images_path=input.png
 <img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/4.jpg" width="500" height="300" />
 
 本次数据集提供以及部分数据处理参考代码：https://github.com/ximimiao/deeplabv3-Tensorflow
+
+个人微信联系方式：wy1119744330 (添加请备注来意)
