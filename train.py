@@ -116,7 +116,7 @@ def train(args):
 
         fluid.io.load_vars(exe, args.init_model, predicate=if_exist)
 
-    iter_id = 38000
+    iter_id = 0
     t_loss = 0.
     sub4_loss = 0.
     sub24_loss = 0.
