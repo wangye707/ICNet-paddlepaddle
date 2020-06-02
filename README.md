@@ -60,6 +60,10 @@ python infer_exp.py --model_path=chlpnt/400000 --images_path=/dataset/origin/5.p
 
 <img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/4.jpg" width="500" height="300" />
 
-本次数据集提供以及部分数据处理参考代码：https://github.com/ximimiao/deeplabv3-Tensorflow
+代码部分细节解释请参考我的CSDN博客：https://blog.csdn.net/qq_28626909/article/details/106489285
 
 个人微信联系方式：wy1119744330 (添加请备注来意)
+
+本次数据集提供以及部分数据处理参考代码：https://github.com/ximimiao/deeplabv3-Tensorflow
+
+
