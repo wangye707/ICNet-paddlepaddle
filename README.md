@@ -18,7 +18,7 @@
 * paddlepaddle-gpu == 1.7.1.post97
 * pandas == 0.25.3
 
-执行方式：
+执行方式（注意，以下脚本有生成文件指令，请附带sudo权限）：
 ```
 1.图片裁剪
 python preprocess.py 
