@@ -40,9 +40,9 @@ python eval.py --model_path=chkpnt/400000
 
 4.通过已训练完成的网络模型预测图片
 直接预测：
-python infer1.py --model_path=chlpnt/400000 --images_path=/dataset/origin/5.png
+python infer1.py --model_path=chkpnt/400000 --images_path=dataset/origin/5.png
 膨胀预测优化（推荐使用）：
-python infer_exp.py --model_path=chlpnt/400000 --images_path=/dataset/origin/5.png
+python infer_exp.py --model_path=chkpnt/400000 --images_path=dataset/origin/5.png
 ```
 迭代过程展示（部分细节）：
 
