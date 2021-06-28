@@ -66,4 +66,5 @@ python infer_exp.py --model_path=chkpnt/400000 --images_path=dataset/origin/5.pn
 
 本次数据集提供以及部分数据处理参考代码：https://github.com/ximimiao/deeplabv3-Tensorflow
 
+感谢@zhangwenjing对项目质量审查帮助，感谢@anxiangsir提供图片裁剪脚本，感谢@PaddlePaddle提供icnet网络结构相关源代码
 
