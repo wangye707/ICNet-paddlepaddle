@@ -3,19 +3,19 @@
 使用ICNet模型对航拍图片(遥感图像)进行图像分割
 
 数据集下载：
-* 百度网盘下载数据集地址：https://pan.baidu.com/s/1DkyQvhvHXVf6EMzm6uLZWQ 
-* 密码：37nk
+* 百度网盘下载链接：https://pan.baidu.com/s/1boXj_k00eg74j729-yK0Gg 
+* 提取码：pcxh
 * 说明：5张图片中前4张用来切分，然后训练网络模型，最后一张图片5.png用来做测试
 
 已训练完成模型下载（其中有1000步和40万步，1000用来参考，40万是最终训练模型）：
-* 百度网盘下载地址：链接：https://pan.baidu.com/s/1do8RRWy_uDGl5snW5Gxujg 
+* 百度网盘下载链接：https://pan.baidu.com/s/1do8RRWy_uDGl5snW5Gxujg 
 * 提取码：k7hz
 * 说明：此处大家也可以自行训练，不采用此处提供的模型。如果下载，请放在模型文件夹下（chkpnt/400000）
 
 训练环境关键包依赖
 * numpy == 1.18.1
 * opencv-python == 4.2.0.32
-* paddlepaddle-gpu == 1.7.1.post97
+* paddlepaddle-gpu == 1.7.1.post97 (仅支持python3.6和3.7)
 * pandas == 0.25.3
 
 执行方式（注意，以下脚本有生成文件指令，请附带sudo权限）：
