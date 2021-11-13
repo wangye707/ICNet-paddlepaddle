@@ -46,19 +46,19 @@ python infer_exp.py --model_path=chkpnt/400000 --images_path=dataset/origin/5.pn
 ```
 迭代过程展示（部分细节）：
 
-<img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/1.jpg" width="350" height="350" />
+<img src="./1.jpg" width="350" height="350" />
 
 膨胀预测优化：
 
-<img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/2.jpg" width="300" height="300" />
+<img src="./2.jpg" width="300" height="300" />
 
 最终结果对比图1：
 
-<img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/3.jpg" width="400" height="300" />
+<img src="./3.jpg" width="400" height="300" />
 
 最终结果对比图2：
 
-<img src="https://github.com/wangye707/ICNet-paddlepaddle/blob/master/4.jpg" width="500" height="300" />
+<img src="./4.jpg" width="500" height="300" />
 
 代码部分细节解释请参考我的CSDN博客：https://blog.csdn.net/qq_28626909/article/details/106489285
 
