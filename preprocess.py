@@ -55,7 +55,7 @@ def generate_train_dataset(image_num = 99999,
             count += 1
             g_count += 1
     df = pd.DataFrame({'image':image_path, 'label':label_path})
-    df.to_csv('dataset/path_list.csv', index=False)
+    #df.to_csv('dataset/path_list.csv', index=False)
 
 # 以下函数都是一些数据增强的函数
 def gamma_transform(img, gamma):
