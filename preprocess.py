@@ -13,8 +13,8 @@ size = 256
 
 # 随机窗口采样
 def generate_train_dataset(image_num = 99999,
-                           train_image_path='dataset/train/images/',
-                           train_label_path='dataset/train/labels/'):
+                           train_image_path='images_seg/train/images/',
+                           train_label_path='images_seg/train/labels/'):
     '''
     该函数用来生成训练集，切图方法为随机切图采样
     :param image_num: 生成样本的个数
@@ -26,10 +26,10 @@ def generate_train_dataset(image_num = 99999,
     # 用来记录所有的子图的数目
     g_count = 1
 
-    images_path = ['dataset/origin/1.png','dataset/origin/2.png',
-                   'dataset/origin/3.png','dataset/origin/4.png']
-    labels_path = ['dataset/origin/1_class.png','dataset/origin/2_class.png',
-                   'dataset/origin/3_class.png','dataset/origin/4_class.png']
+    images_path = ['images_seg/origin/1.png','images_seg/origin/2.png',
+                   'images_seg/origin/3.png','images_seg/origin/4.png']
+    labels_path = ['images_seg/origin/1_class.png','images_seg/origin/2_class.png',
+                   'images_seg/origin/3_class.png','images_seg/origin/4_class.png']
 
     # 每张图片生成子图的个数
     image_each = image_num // len(images_path)
@@ -139,6 +139,6 @@ def data_augment(xb, yb):
     return xb, yb
 
 if __name__ == '__main__':
-    if not os.path.exists('dataset/train/images'): os.mkdir('dataset/train/images')
-    if not os.path.exists('dataset/train/labels'): os.mkdir('dataset/train/labels')
+    if not os.path.exists('images_seg/train/images'): os.mkdir('images_seg/train/images')
+    if not os.path.exists('images_seg/train/labels'): os.mkdir('images_seg/train/labels')
     generate_train_dataset()
