@@ -15,7 +15,7 @@
 训练环境关键包依赖
 * numpy == 1.18.1
 * opencv-python == 4.2.0.32
-* paddlepaddle-gpu == 1.7.1.post97 (仅支持python3.6和3.7)
+* paddlepaddle-gpu == 1.7.1.post97 (python3.6版本，post97为cuda9+cudnn7，其他版本可以对应安装post)
 * pandas == 0.25.3
 
 执行方式（注意，以下脚本有生成文件指令，请附带sudo权限）：
